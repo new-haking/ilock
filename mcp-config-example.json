@@ -1,0 +1,64 @@
+{
+  "mcpServers": {
+    "sqlite-authlook": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "D:\\AuthLook\\authlook.db"
+      ],
+      "description": "Acesso ao banco de dados SQLite do AuthLook"
+    },
+    "filesystem-authlook": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "D:\\AuthLook"
+      ],
+      "description": "Acesso ao sistema de arquivos do projeto AuthLook"
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "SEU_TOKEN_AQUI"
+      },
+      "description": "Acesso ao GitHub para gerenciar repositórios"
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres"
+      ],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "postgresql://user:password@localhost:5432/authlook"
+      },
+      "description": "Acesso ao PostgreSQL (para produção)"
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "SUA_CHAVE_API_AQUI"
+      },
+      "description": "Busca na web usando Brave Search"
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "description": "Sequential Thinking - Resolução de problemas complexos de forma estruturada e reflexiva"
+    }
+  }
+}
+

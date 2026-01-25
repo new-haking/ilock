@@ -1,0 +1,122 @@
+﻿{
+    "mcpServers":  {
+                       "sequential-thinking":  {
+                                                   "command":  "npx",
+                                                   "args":  [
+                                                                "-y",
+                                                                "@modelcontextprotocol/server-sequential-thinking"
+                                                            ],
+                                                   "description":  "Sequential Thinking - Resolução de problemas complexos de forma estruturada e reflexiva"
+                                               },
+                       "filesystem-authlook":  {
+                                                   "command":  "npx",
+                                                   "args":  [
+                                                                "-y",
+                                                                "@modelcontextprotocol/server-filesystem",
+                                                                "D:\\AuthLook"
+                                                            ],
+                                                   "description":  "Acesso ao sistema de arquivos do projeto AuthLook"
+                                               },
+                       "sqlite-authlook":  {
+                                               "command":  "npx",
+                                               "args":  [
+                                                            "-y",
+                                                            "@modelcontextprotocol/server-sqlite",
+                                                            "D:\\AuthLook\\authlook.db"
+                                                        ],
+                                               "description":  "Acesso ao banco de dados SQLite do AuthLook"
+                                           },
+                       "fetch":  {
+                                     "command":  "npx",
+                                     "args":  [
+                                                  "-y",
+                                                  "@modelcontextprotocol/server-fetch"
+                                              ],
+                                     "description":  "Fazer requisições HTTP e buscar conteúdo da web"
+                                 },
+                       "puppeteer":  {
+                                         "command":  "npx",
+                                         "args":  [
+                                                      "-y",
+                                                      "@modelcontextprotocol/server-puppeteer"
+                                                  ],
+                                         "description":  "Automação de navegador e scraping web com Puppeteer"
+                                     },
+                       "playwright":  {
+                                          "command":  "npx",
+                                          "args":  [
+                                                       "-y",
+                                                       "@modelcontextprotocol/server-playwright"
+                                                   ],
+                                          "description":  "Automação de navegador e testes com Playwright"
+                                      },
+                       "memory":  {
+                                      "command":  "npx",
+                                      "args":  [
+                                                   "-y",
+                                                   "@modelcontextprotocol/server-memory"
+                                               ],
+                                      "description":  "Armazenamento de memória persistente para contexto entre conversas"
+                                  },
+                       "knowledge-graph":  {
+                                               "command":  "npx",
+                                               "args":  [
+                                                            "-y",
+                                                            "@itseasy21/mcp-knowledge-graph"
+                                                        ],
+                                               "env":  {
+                                                           "MEMORY_FILE_PATH":  "D:\\AuthLook\\knowledge-graph.jsonl"
+                                                       },
+                                               "description":  "Knowledge Graph Memory - Grafo de conhecimento estruturado para memória persistente"
+                                           },
+                       "git":  {
+                                   "command":  "npx",
+                                   "args":  [
+                                                "-y",
+                                                "@modelcontextprotocol/server-git",
+                                                "D:\\AuthLook"
+                                            ],
+                                   "description":  "Operações Git no repositório do projeto"
+                               },
+                       "docker":  {
+                                      "command":  "npx",
+                                      "args":  [
+                                                   "-y",
+                                                   "@modelcontextprotocol/server-docker"
+                                               ],
+                                      "description":  "Gerenciamento de containers Docker"
+                                  },
+                       "time":  {
+                                    "command":  "npx",
+                                    "args":  [
+                                                 "-y",
+                                                 "@modelcontextprotocol/server-time"
+                                             ],
+                                    "description":  "Informações de data e hora, fusos horários"
+                                },
+                       "calculator":  {
+                                          "command":  "npx",
+                                          "args":  [
+                                                       "-y",
+                                                       "@modelcontextprotocol/server-calculator"
+                                                   ],
+                                          "description":  "Calculadora avançada para operações matemáticas"
+                                      },
+                       "text-to-speech":  {
+                                              "command":  "npx",
+                                              "args":  [
+                                                           "-y",
+                                                           "@modelcontextprotocol/server-text-to-speech"
+                                                       ],
+                                              "description":  "Conversão de texto para fala"
+                                          },
+                       "speech-to-text":  {
+                                              "command":  "npx",
+                                              "args":  [
+                                                           "-y",
+                                                           "@modelcontextprotocol/server-speech-to-text"
+                                                       ],
+                                              "description":  "Conversão de fala para texto"
+                                          }
+                   }
+}
